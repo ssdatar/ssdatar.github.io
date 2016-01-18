@@ -10,7 +10,7 @@
     <meta name="author" content="Saurabh Datar">
     <meta name="description" content="Saurabh Datar. Journalist. Programmer">
     <meta name="keywords" content="Saurabh Datar, journalist, data journalism, portfolio, reporting, writing, coding, programming, Stanford, data visualization, news applications">
-    <title>Saurabh Datar. Journalist + Coder</title>
+    <title>Saurabh Datar. Visual journalist.</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -24,7 +24,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
@@ -46,8 +45,8 @@
             <div class="col-lg-12 intro">
                 <h1>Saurabh Datar</h1>                 
                 <h4>Journalist. Programmer</h4>
-                <p> Hello, I'm a graduate journalism student at Stanford University, with a focus on data-driven storytelling. Before this, I worked as a journalist in India. I am interested in using code and data to tell compelling stories. That was the tl;dr version. For the juicy details, click <a href="./about.html">here</a>.<p>
-                <p>And here is my <a href="./assets/saurabhdatar.pdf" target="blank">resume<sup>[pdf]</sup></a>.</p>
+                <p> Hello, I'm a graduate journalism student at Stanford University, with a focus on data-driven storytelling. Before this, I worked as a journalist in India. I am interested in using code and data to tell compelling stories. That was the tl;dr version. For the juicy details, click <a class="linkout"href="./about.html">here</a>.<p>
+                <p>And here is my <a class="linkout" href="./assets/saurabhdatar.pdf" target="blank">resume<sup>[pdf]</sup></a>.</p>
 
                 <p>Find me at:
                     <a href="mailto:saurabhsdatar@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x icon"></i></a>
@@ -63,30 +62,31 @@
     <section id="code-projects">
         <div class="row data">
           <h2>Data</h2>
-            <div class="col-md-4 col-sm-4 portfolio-item">
+            <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="http://ssdatar.github.io/journalistskilled/build/index.html">Journalists killed</a>
+                    <a href="http://blog.sfgate.com/inthepeninsula/2015/12/15/foreign-stem-students-work-program/">Foreign students in USA</a>
                 </h3>
-                <a href="#">
-                    <img class="img-responsive" src="./assets/journalists.png" alt="">
+                <a href="http://blog.sfgate.com/inthepeninsula/2015/12/15/foreign-stem-students-work-program/">
+                    <img class="img-responsive" src="./assets/foreign-students.png" alt="">
                 </a>
-                <p>A Flask app that tells the stories of the 37 journalists in India who have died on duty, since 1992.</p>
-            </div>
-            <div class="col-md-4 col-sm-4 portfolio-item">
-                <h3>
-                    <a href="#">Foreign students</a>
-                </h3>
-                <a href="#">
-                    <img class="img-responsive" src="./assets/" alt="">
-                </a>
-                <p><span>SFGate.com</span> A news report on the ongoing visa regulations for foreign students in the US. Map was made with SQL and CartoDB</p>
+                <p><span> SFGate.com</span> A news report on the ongoing visa regulations for foreign students in the US. Made with SQL and CartoDB</p>
             </div>
 
-            <div class="col-md-4 col-sm-4 portfolio-item">
+            <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="#">Trumpboard 2015</a>
+                    <a href="http://www.mid-day.com/articles/57-per-cent-of-mlas-in-maharashtra-have-criminal-records/15704165">Criminal Lawmakers</a>
                 </h3>
-                <a href="#">
+                <a href="http://www.mid-day.com/articles/57-per-cent-of-mlas-in-maharashtra-have-criminal-records/15704165">
+                    <img class="img-responsive" src="./assets/mla.png" alt="">
+                </a>
+                <p><span> Mid-day</span> Data investigation of Maharashtra's lawmakers with criminal backgrounds</p>
+            </div>
+
+            <div class="col-md-4 portfolio-item">
+                <h3>
+                    <a href="http://ssdatar.github.io/trumpboard/index.html">Trumpboard 2015</a>
+                </h3>
+                <a href="http://ssdatar.github.io/trumpboard/index.html">
                     <img class="img-responsive" src="./assets/trump.png" alt="">
                 </a>
                 <p>An audio primer of Donald J. Trump's policy statements</p>
@@ -97,36 +97,49 @@
 
         <!-- row -->
         <div class="row data">
-            <div class="col-md-4 col-sm-4 portfolio-item">
+            <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="#">Unicorns</a>
-                </h3>
-                <a href="http://ssdatar.github.io/unicorns/index.html">
-                    <img class="img-responsive" src="./assets/unicorns.png" alt="">
-                </a>
-                <p>An interactive map of startups valued at more than $1 billion</p>
-            </div>
-            <div class="col-md-4 col-sm-4 portfolio-item">
-                <h3>
-                    <a href="#">Criminal Lawmakers</a>
+                    <a href="http://ssdatar.github.io/journalistskilled/build/index.html">Journalists killed in India</a>
                 </h3>
                 <a href="#">
-                    <img class="img-responsive" src="./assets/" alt="">
+                    <img class="img-responsive" src="./assets/journalists.png" alt="">
                 </a>
-                <p><span>Mid-day</span> Interactive analysis of Maharashtra's lawmakers with criminal backgrounds</p>
+                <p>A web app that tells the stories of the 37 journalists in India who have died on duty, since 1992. Made with Leaflet, deployed with Flask.</p>
             </div>
 
-            <div class="col-md-4 col-sm-4 portfolio-item">
+            <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="http://ssdatar.github.io/criminalmlas/index.html">Mumbai's tainted lawmakers</a>
                 </h3>
-                <a href="#">
-                    <img class="img-responsive" src="./assets/" alt="">
+                <a href="http://ssdatar.github.io/criminalmlas/index.html">
+                    <img class="img-responsive" src="./assets/mumbai.png" alt="">
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>          
+                <p>A map that allows citizens to explore criminal cases against their lawmakers. Made in Javascript.</p>
+            </div> 
+
+            <div class="col-md-4 portfolio-item">
+                <h3>
+                    <a href="http://ssdatar.github.io/shootingcalendar/index.html">Police shootings in USA</a>
+                </h3>
+                <a href="http://ssdatar.github.io/shootingcalendar/index.html">
+                    <img class="img-responsive" src="./assets/police.png" alt="">
+                </a>
+                <p>A review of 2015 in police killings in the United States. Made in D3.js</p>
+            </div>         
         </div>
         <!-- /.row -->
+
+        <div class="row data">
+            <div class="col-md-4 portfolio-item">
+                <h3>
+                    <a href="http://bit.ly/ModiFly">India's PM, abroad</a>
+                </h3>
+                <a href="http://bit.ly/ModiFly">
+                    <img class="img-responsive" src="./assets/modi.png" alt="">
+                </a>
+                <p><span>Mid-day</span> An interactive tour of Prime Minister Narendra Modi's foreign visits and their purposes.</p>
+            </div>
+        </div>        
     </section>
     <!-- /section.data -->
 
@@ -134,65 +147,55 @@
     <section id="writing-projects">
         <div class="row writing">
             <h2>Writing</h2>
-            <div class="col-md-4 col-sm-4 portfolio-item">
+            <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="http://blog.sfgate.com/inthepeninsula/2015/12/19/india-community-center-table-tennis-facility-olympic-success/">A hub of Olympic talent</a>
                 </h3>
-                <a href="#">
-                    <img class="img-responsive" src="./assets/" alt="">
+                <a href="http://blog.sfgate.com/inthepeninsula/2015/12/19/india-community-center-table-tennis-facility-olympic-success/">
+                    <img class="img-responsive" src="./assets/tt.png" alt="">
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p><span>SFGate</span> A table tennis center run by the Indian community is an incubator for the US Olympic team</p>
             </div>
-            <div class="col-md-4 col-sm-4 portfolio-item">
+            <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="http://www.mid-day.com/articles/meet-the-men-who-hunt-for-gold-in-the-drains-of-mumbai/242973">Gold in the gutters</a>
                 </h3>
-                <a href="#">
-                    <img class="img-responsive" src="./assets/" alt="">
+                <a href="http://www.mid-day.com/articles/meet-the-men-who-hunt-for-gold-in-the-drains-of-mumbai/242973">
+                    <img class="img-responsive" src="./assets/gold.png" alt="">
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p><span>Mid-day</span> Deep in the bullion market of Mumbai, these hunters find gold in its drains and dirt.</p>
             </div>
 
-            <div class="col-md-4 col-sm-4 portfolio-item">
+            <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="http://www.mid-day.com/articles/are-you-a-bloody-good-writer/15013049">Crowdsourced publishing</a>
                 </h3>
-                <a href="#">
-                    <img class="img-responsive" src="./assets/" alt="">
+                <a href="http://www.mid-day.com/articles/are-you-a-bloody-good-writer/15013049">
+                    <img class="img-responsive" src="./assets/book.png" alt="">
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p><span>Mid-day</span> An Indian author-entrepreneur trusts the wisdom of the crowd to publish the next bestseller.</p>
             </div>            
         </div>
         <!-- /.row -->
 
         <div class="row writing">
-            <div class="col-md-4 col-sm-4 portfolio-item">
+            <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="http://www.mid-day.com/articles/farm-labourers-son-on-his-way-to-world-cup-in-brazil/15351191">From farms to FIFA</a>
                 </h3>
-                <a href="#">
-                    <img class="img-responsive" src="./assets/" alt="">
+                <a href="http://www.mid-day.com/articles/farm-labourers-son-on-his-way-to-world-cup-in-brazil/15351191">
+                    <img class="img-responsive" src="./assets/soccer.png" alt="">
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p><span>Mid-day</span> A boy from the farmer suicide belt of India goes to the FIFA World Cup.</p>
             </div>
-            <div class="col-md-4 col-sm-4 portfolio-item">
+            <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="http://www.mid-day.com/articles/revealed-how-tv-news-channels-prepare-for-prime-time-panel-discussions/15288163">Prime-time noisemakers</a>
                 </h3>
-                <a href="#">
-                    <img class="img-responsive" src="./assets/" alt="">
+                <a href="http://www.mid-day.com/articles/revealed-how-tv-news-channels-prepare-for-prime-time-panel-discussions/15288163">
+                    <img class="img-responsive" src="./assets/news.png" alt="">
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 col-sm-4 portfolio-item">
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <a href="#">
-                    <img class="img-responsive" src="./assets/" alt="">
-                </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p><span>Mid-day</span> The people behind the cacophonous talking heads of Indian news television.</p>
             </div>            
         </div>
     </section>        
@@ -213,10 +216,10 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!--script src="js/jquery.js"></script-->
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--script src="js/bootstrap.min.js"></script-->
 
 </body>
 
