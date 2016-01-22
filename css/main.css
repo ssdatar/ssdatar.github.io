@@ -39,6 +39,16 @@ h1 {
 	color: #ff3232;
 }
 
+
+nav ul{
+	padding-left: 0;
+	text-align: right;
+}
+
+nav ul li:last-child{
+	padding-right: 0;
+}
+
 section {
 	padding: 10px 0 10px 0;
 }
@@ -48,7 +58,7 @@ section {
 }
 
 /*body {
-    padding-top: 70px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. 
+    padding-top: 70px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes.
 */}
 
 div.data, div.writing {
@@ -66,7 +76,7 @@ span {
 	background-color: black;
 }
 
-.data h2, 
+.data h2,
 .writing h2 {
 	margin-left: 15px;
 	font-size: 34px;
@@ -90,6 +100,6 @@ a {
 }
 
 footer {
-    margin: 10px 0; 
+    margin: 10px 0;
     text-align: center;
 }
