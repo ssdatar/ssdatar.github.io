@@ -42,7 +42,7 @@ h1 {
 
 nav ul{
 	padding-left: 0;
-	text-align: right;
+	text-align: left;
 }
 
 nav ul li:last-child{
