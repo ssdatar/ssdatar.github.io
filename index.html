@@ -11,18 +11,17 @@
     <meta name="keywords" content="Saurabh Datar, journalist, data journalism, portfolio, reporting, writing, coding, programming, Stanford, data visualization, news applications">
     <title>Saurabh Datar. Visual journalist.</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
 
     <!-- Custom CSS -->
     <link href="./css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -45,8 +44,10 @@
             <div class="col-lg-12 intro">
                 <h1>Saurabh Datar</h1>
                 <h4>Journalist. Programmer</h4>
-                <p> Hello, I'm a graduate journalism student at Stanford University, with a focus on data-driven storytelling. Before this, I worked as a journalist in India, where I produced my news organization's first data journalism projects. I am interested in using code and data to tell compelling stories. That was the tl;dr version. For the juicy details, click <a class="linkout" href="./about.html">here</a>.<p>
-                <p>And here is my <a class="linkout" href="./assets/saurabhdatar_resume.pdf" target="blank">resume<sup>[pdf]</sup></a>.</p>
+                <p> Hello, I'm a graduate journalism student at <mark>Stanford University</mark>, with a focus on <mark>data-driven storytelling</mark>. Before this, I worked as a journalist in India, where I produced my news organization's <mark>first data journalism projects</mark>.</p> 
+
+                <p>I am interested in using <mark>code and data</mark> to tell compelling stories. I have experience working in the <mark>MEAN stack</mark>, as well as <mark>Python</mark>. That was the tl;dr version. For the juicy details, click <a class="linkout" target="_blank" href="./about.html"><span>here</span></a>.<p>
+                <p>And here is my <a target="_blank" class="linkout" href="./assets/saurabhdatar_resume.pdf" target="blank">resume<sup>[pdf]</sup></a>.</p>
 
                 <p>Find me at:
                     <a href="mailto:saurabhsdatar@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x icon"></i></a>
@@ -63,34 +64,48 @@
         <div class="row data">
           <h2>Data</h2>
 
-            <div class="col-md-4 portfolio-item">
-                <h3>
-                    <a href="http://ssdatar.github.io/journalistskilled/build/index.html">Journalists killed in India</a>
-                </h3>
-                <a href="http://ssdatar.github.io/journalistskilled/build/index.html">
-                    <img class="img-responsive" src="./assets/journalists.png" alt="">
-                </a>
-                <p><span> Personal</span> A web app that tells the stories of the 37 journalists in India who have died on duty, since 1992. Made with Leaflet, deployed with Flask</p>
+            <div class="col-md-4 portfolio-item" data-featherlight="#journalist">
+                <h3>Journalists killed in India</h3>
+                <img class="img-responsive" src="./assets/journalists.png" alt="">
+                <p><span> Personal</span> Made with <mark>Leaflet</mark>, deployed with <mark>Flask</mark></p>
+
+                <!-- Modal -->
+              <div id="journalist" class="lightbox">
+                <p>A web app that tells the stories of the <mark>37 journalists in India</mark> who have died on duty, since 1992. The app details how each scribe died and the circumstances that led to their death.</p> 
+
+                <p> Data has been sourced from the Committee to Protect Journalists. The app was made in <mark>Leaflet.js</mark>, and deployed using Python's <mark>Flask framework</mark>.</p>
+
+                <p>To view this project, click
+                    <a target="_blank" href="http://ssdatar.github.io/journalistskilled/build/index.html"><span>here</span> </a>
+                </p>
+              </div>
             </div>
 
-            <div class="col-md-4 portfolio-item">
-                <h3>
-                    <a href="http://ssdatar.github.io/oscars">The Oscar Game</a>
-                </h3>
-                <a href="http://ssdatar.github.io/oscars">
-                    <img class="img-responsive" src="./assets/oscars.png" alt="">
-                </a>
-                <p><span> Personal</span> A fun quiz on how well you know your Oscar-winning movies. Made with jQuery</p>
+            <div class="col-md-4 portfolio-item" data-featherlight="#oscars">
+                <h3>The Oscar Game</h3>
+                <img class="img-responsive" src="./assets/oscars.png" alt="">
+                <p><span> Personal</span> How well you know your Oscar-winning movies? Made with <mark>jQuery</mark></p>
+
+                <div id="oscars" class="lightbox">
+                    <p>I scraped the movie synopses of all the 'Best Picture' Academy Award winners from <a href="http://www.omdbapi.com">The Open Movie Database</a> using <mark>Python</mark>, and built a quiz, using <mark>jQuery</mark>, a day before the ceremony.</p> 
+                    <p>To view this project, click
+                        <a target="_blank" href="http://ssdatar.github.io/oscars"> <span>here</span> </a>
+                    </p>
+                </div>
             </div>
 
-            <div class="col-md-4 portfolio-item">
-                <h3>
-                    <a href="http://ssdatar.github.io/shootingcalendar/index.html">Police shootings in USA</a>
-                </h3>
-                <a href="http://ssdatar.github.io/shootingcalendar/index.html">
-                    <img class="img-responsive" src="./assets/police.png" alt="">
-                </a>
-                <p><span> Personal</span> A review of 2015 in police killings in the United States. Made in D3.js</p>
+            <div class="col-md-4 portfolio-item" data-featherlight="#shootings">
+                <h3>Police shootings in USA</h3>
+                <img class="img-responsive" src="./assets/police.png" alt="">
+                <p><span> Personal</span> A review of 2015 in police killings in the US. Made in <mark>d3</mark></p>
+
+                <div id="shootings" class="lightbox">
+                    <p>A year-in-review of how many people have been shot by the police in the USA. This makes use of data collated by the Washington Post and uses <mark>d3.js</mark> for visualization.</p>
+                    
+                    <p>To view this project, click
+                        <a target="_blank" href="http://ssdatar.github.io/shootingcalendar"> <span>here</span> </a>
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -98,57 +113,85 @@
 
         <!-- row -->
         <div class="row data">
-            <div class="col-md-4 portfolio-item">
-                <h3>
-                    <a href="http://ssdatar.github.io/trumpboard/index.html">Trumpboard 2015</a>
-                </h3>
-                <a href="http://ssdatar.github.io/trumpboard/index.html">
-                    <img class="img-responsive" src="./assets/trump.png" alt="">
-                </a>
+            <div class="col-md-4 portfolio-item" data-featherlight="#trump">
+                <h3>Trumpboard 2015</h3>
+                <img class="img-responsive" src="./assets/trump.png" alt="">
                 <p><span> Personal</span> An audio primer of Donald J. Trump's policy statements</p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <h3>
-                    <a href="http://blog.sfgate.com/inthepeninsula/2015/12/15/foreign-stem-students-work-program/">Foreign students in USA</a>
-                </h3>
-                <a href="http://blog.sfgate.com/inthepeninsula/2015/12/15/foreign-stem-students-work-program/">
-                    <img class="img-responsive" src="./assets/foreign-students.png" alt="">
-                </a>
-                <p><span> SFGate.com</span> A news report on the changing visa regulations for foreign students in the US. Made with SQL and CartoDB</p>
+                <div id="trump" class="lightbox">
+                    <p>I listened to hours of Donald Trump's speeches and compiled his various policy statements. I then built a soundboard in vanilla <mark>JavaScript</mark> and <mark>HTML5</mark>.</p>
+                    <p>A better way to do it is to use the IBM Watson <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/speech-to-text.html"><strong>Speech to Text</strong></a> API. Coming soon.</p>
+                    <p>To view this project, click
+                        <a target="_blank" href="http://ssdatar.github.io/journalistskilled/build/index.html"> <span>here</span> </a>
+                    </p>
+                </div>
             </div>
 
-            <div class="col-md-4 portfolio-item">
-                <h3>
-                    <a href="http://www.mid-day.com/articles/57-per-cent-of-mlas-in-maharashtra-have-criminal-records/15704165">Criminal Lawmakers</a>
-                </h3>
-                <a href="http://www.mid-day.com/articles/57-per-cent-of-mlas-in-maharashtra-have-criminal-records/15704165">
-                    <img class="img-responsive" src="./assets/mla.png" alt="">
-                </a>
+            <div class="col-md-4 portfolio-item" data-featherlight="#foreign">
+                <h3>Foreign students in USA</h3>
+                <img class="img-responsive" src="./assets/foreign-students.png" alt="">
+                <p><span> SFGate.com</span> The changing visa rules for foreign students in the US. Made with <mark>SQL</mark> and CartoDB</p>
+
+                <div id="foreign" class="lightbox">
+                    <p> A part of a news story on the changing visa regulations for international students who are enrolled in STEM (Science, Technology, Engineering, and Mathematics) programs in U.S. universities. Besides reporting the story and producing an audio report, I also built an <mark>interactive map</mark> of contributions foreign students make to the United States' economy.</p>
+
+                    <p> After downloading the data from NAFSA: Association of International Educators, I used <mark>SQL</mark> in CartoDB to join the data to the corresponding state on the shapefile.</p> 
+
+                    <p>To view this project, click
+                        <a target="_blank" href="http://blog.sfgate.com/inthepeninsula/2015/12/15/foreign-stem-students-work-program/"> <span>here</span> </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 portfolio-item" data-featherlight="#criminal">
+                <h3>Criminal Lawmakers</h3>
+                <img class="img-responsive" src="./assets/mla.png" alt="">
                 <p><span> Mid-day</span> Data investigation of Maharashtra's lawmakers with criminal backgrounds</p>
+
+                <div id="criminal" class="lightbox">
+                    <p> This was the <mark>first data journalism/interactive story</mark> for the paper. The state of Maharashtra, India went to the polls in 2014. Each candidate is required to file an affidavit with the election commission, detailing his finances and any criminal cases against him/her.</p>
+
+                    <p>Unfortunately, these are all scanned images - which a small non-profit managed to convert to PDFs. I <mark>scraped these PDFs using Tabula</mark> and analyzed the criminal records of the elected lawmakers, and found that nearly 60 percent of them had criminal charges - some had been charged for kidnapping, robbery and attempt to murder.</p>
+
+                    <p> I built interactive charts allowing people to explore this data. </p>
+                    <p>To view this project, click
+                        <a target="_blank" href="http://www.mid-day.com/articles/57-per-cent-of-mlas-in-maharashtra-have-criminal-records/15704165"> <span>here</span> </a>
+                    </p>
+                </div>
             </div>            
         </div>
         <!-- /.row -->
 
         <div class="row data">
-            
-            <div class="col-md-4 portfolio-item">
-                <h3>
-                    <a href="http://ssdatar.github.io/criminalmlas/index.html">Mumbai's tainted lawmakers</a>
-                </h3>
-                <a href="http://ssdatar.github.io/criminalmlas/index.html">
-                    <img class="img-responsive" src="./assets/mumbai.png" alt="">
-                </a>
-                <p>A map that allows citizens to explore criminal cases against their lawmakers. Made with jQuery</p>
+            <div class="col-md-4 portfolio-item" data-featherlight="#mla">
+                <h3>Mumbai's tainted lawmakers</h3>
+                <img class="img-responsive" src="./assets/mumbai.png" alt="">
+                <p>A map that allows citizens to explore criminal cases against their lawmakers. Made with <mark>jQuery</mark> and <mark>Inkscape</mark></p>
+
+                <div id="mla" class="lightbox">
+                    <p>I extended the project for criminal records in the state and built it for the city of Mumbai.</p>
+
+                    <p>There exists <strong>no open shapefile or map</strong> for the constituency boundaries of Mumbai. So I downloaded PDF maps from the government website and <mark>traced them using Inkscape</mark> to create my own SVG file.</p>
+
+                    <p>I then used <mark>jQuery</mark> to make an interactive visualization.</p>
+                    <p>To view this project, click
+                        <a target="_blank" href="http://ssdatar.github.io/criminalmlas"> <span>here</span> </a>
+                    </p>
+                </div>
+
             </div>
 
-            <div class="col-md-4 portfolio-item">
-                <h3>
-                    <a href="http://bit.ly/ModiFly">India's PM, abroad</a>
-                </h3>
-                <a href="http://bit.ly/ModiFly">
-                    <img class="img-responsive" src="./assets/modi.png" alt="">
-                </a>
+            <div class="col-md-4 portfolio-item" data-featherlight="modi">
+                <h3>India's PM, abroad</h3>
+                <img class="img-responsive" src="./assets/modi.png" alt="">
                 <p><span>Mid-day</span> An interactive tour of Prime Minister Narendra Modi's foreign visits and their purposes</p>
+
+                <div id="modi" class="lightbox">
+                    <p> I scraped the Indian Prime Minister's website to get a list of all the countries he visited after being chosen the Prime Minister. I then built an interactive timeline allowing people to follow his visits and the purpose of each visit.</p>
+
+                    <p>To view this project, click
+                        <a target="_blank" href="http://www.mid-day.com/articles/mapping-globetrotting-narendra-modis-foreign-trips/16269156"> <span>here</span> </a>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -160,18 +203,18 @@
             <h2>Writing</h2>
             <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="http://blog.sfgate.com/inthepeninsula/2015/12/19/india-community-center-table-tennis-facility-olympic-success/">A hub of Olympic talent</a>
+                    <a target="_blank" href="http://blog.sfgate.com/inthepeninsula/2015/12/19/india-community-center-table-tennis-facility-olympic-success/">A hub of Olympic talent</a>
                 </h3>
-                <a href="http://blog.sfgate.com/inthepeninsula/2015/12/19/india-community-center-table-tennis-facility-olympic-success/">
+                <a target="_blank" href="http://blog.sfgate.com/inthepeninsula/2015/12/19/india-community-center-table-tennis-facility-olympic-success/">
                     <img class="img-responsive" src="./assets/tt.png" alt="">
                 </a>
                 <p><span>SFGate</span> A table tennis center run by the Indian community is an incubator for the US Olympic team</p>
             </div>
             <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="http://www.mid-day.com/articles/meet-the-men-who-hunt-for-gold-in-the-drains-of-mumbai/242973">Gold in the gutters</a>
+                    <a target="_blank" href="http://www.mid-day.com/articles/meet-the-men-who-hunt-for-gold-in-the-drains-of-mumbai/242973">Gold in the gutters</a>
                 </h3>
-                <a href="http://www.mid-day.com/articles/meet-the-men-who-hunt-for-gold-in-the-drains-of-mumbai/242973">
+                <a target="_blank" href="http://www.mid-day.com/articles/meet-the-men-who-hunt-for-gold-in-the-drains-of-mumbai/242973">
                     <img class="img-responsive" src="./assets/gold.png" alt="">
                 </a>
                 <p><span>Mid-day</span> Deep in the bullion market of Mumbai, these hunters find gold in its drains and dirt</p>
@@ -179,7 +222,7 @@
 
             <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="http://www.mid-day.com/articles/are-you-a-bloody-good-writer/15013049">Crowdsourced publishing</a>
+                    <a target="_blank" href="http://www.mid-day.com/articles/are-you-a-bloody-good-writer/15013049">Crowdsourced publishing</a>
                 </h3>
                 <a href="http://www.mid-day.com/articles/are-you-a-bloody-good-writer/15013049">
                     <img class="img-responsive" src="./assets/book.png" alt="">
@@ -192,18 +235,18 @@
         <div class="row writing">
             <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="http://www.mid-day.com/articles/farm-labourers-son-on-his-way-to-world-cup-in-brazil/15351191">From farms to FIFA</a>
+                    <a target="_blank" href="http://www.mid-day.com/articles/farm-labourers-son-on-his-way-to-world-cup-in-brazil/15351191">From farms to FIFA</a>
                 </h3>
-                <a href="http://www.mid-day.com/articles/farm-labourers-son-on-his-way-to-world-cup-in-brazil/15351191">
+                <a target="_blank" href="http://www.mid-day.com/articles/farm-labourers-son-on-his-way-to-world-cup-in-brazil/15351191">
                     <img class="img-responsive" src="./assets/soccer.png" alt="">
                 </a>
                 <p><span>Mid-day</span> A boy from the farmer suicide belt of India goes to the FIFA World Cup</p>
             </div>
             <div class="col-md-4 portfolio-item">
                 <h3>
-                    <a href="http://www.mid-day.com/articles/revealed-how-tv-news-channels-prepare-for-prime-time-panel-discussions/15288163">Prime-time noisemakers</a>
+                    <a target="_blank" href="http://www.mid-day.com/articles/revealed-how-tv-news-channels-prepare-for-prime-time-panel-discussions/15288163">Prime-time noisemakers</a>
                 </h3>
-                <a href="http://www.mid-day.com/articles/revealed-how-tv-news-channels-prepare-for-prime-time-panel-discussions/15288163">
+                <a target="_blank" href="http://www.mid-day.com/articles/revealed-how-tv-news-channels-prepare-for-prime-time-panel-discussions/15288163">
                     <img class="img-responsive" src="./assets/news.png" alt="">
                 </a>
                 <p><span>Mid-day</span> The people behind the cacophonous talking heads of Indian news television</p>
