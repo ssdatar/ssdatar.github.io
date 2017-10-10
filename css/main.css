@@ -1,21 +1,17 @@
  body {
- 	font-family: 'Anonymous Pro', Helvetica, sans-serif;
+ 	font-family: 'Lato', sans-serif, 'Times New Roman';
  }
 
- /*h1,
- h2,
- h3,
- h4,
- p, a {
- 	font-family: 'Anonymous Pro', Helvetica, sans-serif;
- }*/
+.container {
+  max-width: 50em;
+  margin: 0 auto;
+}
 
- li {
+li {
  	display: inline-block;
  	padding-right: 50px;
  	font-size: 20px;
- }
-
+}
 
 i {
 	color: black;
@@ -56,17 +52,13 @@ section {
 	font-size: 18px;
 }
 
-/*body {
-    padding-top: 70px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes.
-*/}
 
-div.data, div.writing {
-	margin-bottom: 30px;
+.data, .writing {
+	/*margin-bottom: 30px;*/
 }
 
 img {
-	height: 400px;
-	margin-bottom: 15px;
+	margin-bottom: 1.5em;
 	border:1px solid #021a40;
 }
 
@@ -76,14 +68,11 @@ span {
 }
 
 .data h2,
-.writing h2 {
+.writing h2,
+.open-source h2 {
 	margin-left: 15px;
-	font-size: 34px;
+	/*font-size: 34px;*/
 	color: darkred;
-}
-
-.portfolio-item p {
-	font-size: 16px;
 }
 
 a {
@@ -94,14 +83,20 @@ a {
 	color: #666666;
 }
 
-.portfolio-item:hover {
+/*.portfolio-item:hover {
 	opacity: 0.65;
 	cursor: pointer;
+}*/
+
+.portfolio-item .title {
+  font-size: 1.3em;
+  margin: 0;
+  margin-bottom: .5em;
 }
 
 footer {
-    margin: 10px 0;
-    text-align: center;
+  margin: 10px 0;
+  text-align: center;
 }
 
 .lightbox {
@@ -112,3 +107,9 @@ footer {
 	font-size: 20px;
 }
 
+@media screen and (max-width: 484px) {
+  .portfolio-item {
+    margin: 2em 0;
+    border-bottom: 2px solid #666;
+  }
+}
