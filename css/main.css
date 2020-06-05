@@ -55,6 +55,10 @@ section {
   justify-content: space-between;
 }
 
+#writing-projects {
+  max-width: 800px;
+}
+
 .intro {
   max-width: 600px;
   margin: 0 auto
@@ -64,14 +68,10 @@ section {
   font-size: 18px;
 }
 
-
-.data, .writing {
-  /*margin-bottom: 30px;*/
-}
-
 span {
-  color: white;
-  background-color: black;
+  color: #fafafa;
+  background-color: #000000;
+  padding: 3px;
 }
 
 .data h2,
@@ -104,6 +104,16 @@ a {
   font-size: 1.2em;
   margin: .5em auto;
   line-height: 1.2;
+}
+
+.portfolio-item__org {
+  font-size: .9em;
+}
+
+.portfolio-item__org span {
+  background: #000;
+  color: #fafafa;
+  padding: 3px;
 }
 
 .portfolio-item img {

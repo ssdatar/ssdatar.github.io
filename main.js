@@ -41,6 +41,11 @@ divs.append('img')
     ? 'assets/map-precinct.jpg' :
     `${d.url}assets/images/${d.img}`);
 
- divs.append('h3')
-   .attr('class', 'portfolio-item__title')
-   .text(d => d.project);
+divs.append('h3')
+  .attr('class', 'portfolio-item__title')
+  .text(d => d.project);
+
+divs.append('p')
+  .attr('class', 'portfolio-item__org')
+  .append('span')
+  .text(d => d.org);
