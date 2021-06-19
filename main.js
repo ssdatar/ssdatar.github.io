@@ -1,5 +1,9 @@
-const projData = [{"project":"Utility Regulators Ignored Conflict Of Interest Concerns For National Grid Audit","url":"https://www.wbur.org/investigations/2020/11/12/conflict-of-interest-investigation-national-grid-utility-regulators-massachusetts","org":"WBUR","img":"https://d279m997dpfwgl.cloudfront.net/wp/2020/11/1109_national-grid01-1000x667.jpg"},
+const projData = [{"project":"Capitol Protesters And Rioters From Mass. Vow To Increase Ranks","url":"https://www.wbur.org/investigations/2021/02/05/super-happy-fun-neo-nazi-rioters-hate-massachusetts-insurrection","org":"WBUR","img":"riot_600.jpg"},
+{"project":"Some Boston Police Officers Have Been On Medical Leave For Years, Costing The City Millions","url":"https://www.wbur.org/news/2020/12/21/boston-police-medical-leave-overtime-costs","org":"WBUR","img":"wbur-cops_600.jpg"},
+{"project":"Hundreds Of Businesses In Mass. Violated COVID-19 Rules, Putting Workers At Risk","url":"https://www.wbur.org/news/2020/12/14/covid-businesses-violations-massachusetts-employees-covid-19-regulations-safety","org":"WBUR","img":"wbur-businesses_600.jpg"},
+{"project":"Utility Regulators Ignored Conflict Of Interest Concerns For National Grid Audit","url":"https://www.wbur.org/investigations/2020/11/12/conflict-of-interest-investigation-national-grid-utility-regulators-massachusetts","org":"WBUR","img":"fti_600.jpg"},
 {"project":"Is death the great equalizer?","url":"https://apps.bostonglobe.com/metro/investigations/spotlight/2020/09/last-words/part1-dying-poor/index.html","org":"The Boston Globe","img":"https://apps.bostonglobe.com/metro/investigations/spotlight/2020/09/last-words/assets/images/day1-share.jpg"},
+{"project":"Dangerous drivers should have lost their licenses. They didn't — and others died","url":"https://apps.bostonglobe.com/2020/08/metro/investigations/blindspot/part-1/","org":"The Boston Globe","img":"rmv_600.jpg"},
 {"project":"The virus’s tale","url":"https://apps.bostonglobe.com/metro/graphics/2020/05/coronavirus-tale/","org":"The Boston Globe","img":"coronavirus-tale-og.jpg"},
 {"project":"Coronavirus deaths in Mass. are likely far higher than what’s been reported. Here’s why","url":"https://www.bostonglobe.com/2020/04/22/nation/official-toll-massachusetts-coronavirus-deaths-likely-undercounted-review-shows/","org":"The Boston Globe","img":"https://bostonglobe-prod.cdn.arcpublishing.com/resizer/6vUM1pxTNJi5-uV8OpZrqlUckYI=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/TFUVTTODH6XSVP6AVDGY5X5AMU.jpg"},
 {"project":"How overwhelmed could New England hospitals become? Explore maps of different scenarios","url":"https://www.bostonglobe.com/2020/03/26/nation/how-overwhelmed-could-new-england-hospitals-become-explore-maps-different-scenarios/","org":"The Boston Globe","img":"https://bostonglobe-prod.cdn.arcpublishing.com/resizer/It_ElsukaYmpbH312-Anx_cHbhg=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/CBSAPTBWBBHLRHUHNFINSKFRFY.jpg"},
@@ -19,10 +23,10 @@ const projData = [{"project":"Utility Regulators Ignored Conflict Of Interest Co
 {"project":"Traffic, crowding, cancellations: This MBTA route shows all the T’s bus problems","url":"https://apps.bostonglobe.com/metro/graphics/2018/08/111-bus/","org":"The Boston Globe","img":"https://apps.bostonglobe.com/metro/graphics/2018/08/111-bus/assets/img/bus_og_1200.jpg"},
 {"project":"The case for ending Google’s Internet domination","url":"https://apps.bostonglobe.com/opinion/graphics/2018/06/break-google/","org":"The Boston Globe","img":"break.gif"},
 {"project":"Doctors and sex abuse: How well does your state protect patients?","url":"https://doctors.ajc.com/states/","org":"Atlanta Journal-Constitution","img":"http://s3.amazonaws.com/ajc-doctors-images/Doc-stethoscope-intro_social.jpg"},
-{"project":"Families, not job seekers, gain the most from legal immigration","url":"https://www.ajc.com/news/gen-politics/families-not-job-seekers-gain-the-most-from-legal-immigration/mMeYq4d9MuXy4d5TwCvOPJ/","org":"Atlanta Journal-Constitution","img":"https://www.ajc.com/rf/image_lowres/Pub/p8/MyAJC/2017/08/07/Images/green-cards_by-categ-460-460.png"},
+{"project":"Families, not job seekers, gain the most from legal immigration","url":"https://www.ajc.com/news/gen-politics/families-not-job-seekers-gain-the-most-from-legal-immigration/mMeYq4d9MuXy4d5TwCvOPJ/","org":"Atlanta Journal-Constitution","img":"https://www.ajc.com/resizer/V8fzg7ncZ_2G-T9qyw3thDqDjXc=/1066x600/cloudfront-us-east-1.images.arcpublishing.com/ajc/6ENUZX6OP75TQGCKGAO4OBZW4U.png"},
 {"project":"Which are Georgia's winning industries?","url":"https://www.ajc.com/business/which-are-georgia-winning-and-losing-job-industries-since-2000/8eIZ0Q6X1NfMjk3KEYSsZJ/","org":"Atlanta Journal-Constitution","img":"https://s3.amazonaws.com/ajc-staging-sites/georgia-industries/img/trade-all.jpg"},
 {"project":"How Georgia’s Sixth Congressional District voted","url":"https://www.ajc.com/news/gen-politics/how-each-neighborhood-voted-the-6th-district-runoff/72ZamHK2RQLoVsvFhcfWjM/","org":"Atlanta Journal-Constitution","img":"map-precinct.jpg"},
-{"project":"After Virginia, Georgia has the most Confederate symbols in the country","url":"https://www.ajc.com/news/state--regional-govt--politics/after-virginia-georgia-has-the-most-confederate-symbols-the-country/vZPnQ2kGSd9xgURzS5kJiJ/","org":"Atlanta Journal-Constitution","img":"https://www.ajc.com/rf/image_lowres/Pub/p8/AJC/2017/08/18/Images/newsEngin.19603242_030616_IN_stone1.jpg"},
+{"project":"After Virginia, Georgia has the most Confederate symbols in the country","url":"https://www.ajc.com/news/state--regional-govt--politics/after-virginia-georgia-has-the-most-confederate-symbols-the-country/vZPnQ2kGSd9xgURzS5kJiJ/","org":"Atlanta Journal-Constitution","img":"https://www.ajc.com/resizer/M2PLdgBkBWt5qWE-IrHjV3ivoc0=/1066x600/cloudfront-us-east-1.images.arcpublishing.com/ajc/S2IKTBBR2SIA6HW4A7PU2YYZBQ.jpg"},
 {"project":"The Ultimate Atlanta School Guide","url":"https://schools.ajc.com/#/schools","org":"Atlanta Journal-Constitution","img":"https://schools.ajc.com/images/school.jpg"}];
 
 const projects = d3.select('#code-projects')
@@ -41,9 +45,10 @@ const divs = links
 
 divs.append('img')
   .attr('src', d => d.img.indexOf('http') > -1 ? d.img : 
-    d.project.indexOf('Sixth Congressional') > -1 
-    ? 'assets/map-precinct.jpg' :
+    d.project.indexOf('Sixth Congressional') > -1 || d.img.indexOf('_600') > -1
+    ? `assets/${d.img}` :
     `${d.url}assets/images/${d.img}`);
+
 
 divs.append('h3')
   .attr('class', 'portfolio-item__title')
